@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="REGIONS" directorySegmentName="seg_0" id="15475B6C-7571-BC8B-E235-C12C244CCA91">
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:56 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<schemaObject>05D39AEA-8FBA-81B8-37B0-CFEAD12A6E86</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>57507E2B-CD42-8143-94A4-E74C1987F15B</segment>
+<tableSpace>8C3F241C-45BB-1443-6EE4-3B5CC0C0E9AD</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="REGION_ID" id="C96819BB-7FE0-DCEC-F952-FA90DE698F34">
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REGION_NAME" id="E5FE1645-2859-06A7-8FE4-594C33A2BF5C">
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="REG_ID_PK" id="FE9DD090-D952-717A-9D8D-3258B3901975">
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<schemaObject>05D39AEA-8FBA-81B8-37B0-CFEAD12A6E86</schemaObject>
+<segment>4016A71F-C7F7-9951-F59D-AC2C3A08C050</segment>
+<tableSpace>8C3F241C-45BB-1443-6EE4-3B5CC0C0E9AD</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="REG_ID_PK" id="9C0ACF39-7571-0962-0549-86A105B278D7">
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<segment>4016A71F-C7F7-9951-F59D-AC2C3A08C050</segment>
+<tableSpace>8C3F241C-45BB-1443-6EE4-3B5CC0C0E9AD</tableSpace>
+<existingIndex>FE9DD090-D952-717A-9D8D-3258B3901975</existingIndex>
+<indexSegment>4016A71F-C7F7-9951-F59D-AC2C3A08C050</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

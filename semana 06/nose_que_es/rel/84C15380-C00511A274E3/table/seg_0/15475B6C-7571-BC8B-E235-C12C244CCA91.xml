@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="15475B6C-7571-BC8B-E235-C12C244CCA91" schemaObject="05D39AEA-8FBA-81B8-37B0-CFEAD12A6E86" name="REGIONS">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REGIONS</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:56 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REGION_ID" id="C96819BB-7FE0-DCEC-F952-FA90DE698F34">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>REGION_ID_NN</notNullConstraintName>
+</Column>
+<Column name="REGION_NAME" id="E5FE1645-2859-06A7-8FE4-594C33A2BF5C">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_NAME</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C0ACF39-7571-0962-0549-86A105B278D7" name="REG_ID_PK">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C96819BB-7FE0-DCEC-F952-FA90DE698F34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE9DD090-D952-717A-9D8D-3258B3901975" schemaObject="05D39AEA-8FBA-81B8-37B0-CFEAD12A6E86" name="REG_ID_PK">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C96819BB-7FE0-DCEC-F952-FA90DE698F34"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

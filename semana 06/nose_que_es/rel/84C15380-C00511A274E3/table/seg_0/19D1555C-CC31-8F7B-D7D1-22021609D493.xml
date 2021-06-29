@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="19D1555C-CC31-8F7B-D7D1-22021609D493" schemaObject="05D39AEA-8FBA-81B8-37B0-CFEAD12A6E86" name="TBEMPLEADOSDEP30">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>TBEMPLEADOSDEP30</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:56 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="EMPLOYEE_ID" id="0818976F-5913-A785-53CA-6531920C471D">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>EMPLOYEE_ID</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRST_NAME" id="C66DAECD-2912-A9EB-12F3-74F7FC43DE2A">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>FIRST_NAME</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LAST_NAME" id="1E410DA0-1256-617E-AD05-8DE5577860F0">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>LAST_NAME</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="5027C625-4DA6-6607-AC20-88691F9640A9">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE_NUMBER" id="3302E975-A96D-89B9-487B-9739FE421A93">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>PHONE_NUMBER</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HIRE_DATE" id="C44440FC-D0E1-8913-E965-13FBFA9A84F4">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>HIRE_DATE</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="JOB_ID" id="91075A1A-FCB6-EC6C-4DD0-704F20DEF5D1">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>JOB_ID</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SALARY" id="DD5B95F2-6458-7BCA-0642-0BC93DD71292">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>SALARY</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COMMISSION_PCT" id="83B7F742-94AE-A558-CD35-C2B86BB8A016">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>COMMISSION_PCT</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MANAGER_ID" id="55614B4C-2838-9E93-EC8E-AD01F0EC60AE">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>MANAGER_ID</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,6,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DEPARTMENT_ID" id="9FE930DA-1EAB-3D68-9FE1-DB230A33C1C0">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>DEPARTMENT_ID</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="08986470-EE95-150F-6B13-3B599F37E955">
+<sourceConnName>cnxhr</sourceConnName>
+<sourceObjSchema>TBEMPLEADOSDEP30</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>jossr</createdBy>
+<createdTime>2021-04-29 21:51:57 UTC</createdTime>
+<ownerDesignName>nose_que_es</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+</Table>

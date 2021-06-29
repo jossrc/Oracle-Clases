@@ -1,0 +1,35 @@
+/* --- PREGUNTA 01 --- */
+
+-- Creando Usuario usrcoco
+
+ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
+
+CREATE USER usrcoco IDENTIFIED BY albita
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP
+PROFILE DEFAULT;
+
+-- Visualizar nombre y estado de todos los usuarios
+SELECT username, account_status FROM dba_users;
+
+-- Asignar permisos al usuario creado
+
+GRANT CONNECT, RESOURCE TO usrcoco;
+GRANT CREATE ANY TABLE TO usrcoco;
+--GRANT CREATE SEQUENCE TO usrcoco;
+
+GRANT CREATE SYNONYM TO usrcoco;
+GRANT CREATE PUBLIC SYNONYM TO usrcoco;
+
+ALTER USER usrcoco QUOTA 10M ON USERS;
+
+/* --- PREGUNTA 02 --- */
+
+SELECT OWNER, COUNT(*) CANTIDAD_TABLAS FROM dba_objects
+WHERE OWNER IN ('SYS', 'SYSTEM', 'SCOTT') AND 
+            OBJECT_TYPE = 'TABLE' AND
+            CREATED BETWEEN '01/01/2010' AND '01/05/2020'
+GROUP BY OWNER
+ORDER BY CANTIDAD_TABLAS DESC;
+
+

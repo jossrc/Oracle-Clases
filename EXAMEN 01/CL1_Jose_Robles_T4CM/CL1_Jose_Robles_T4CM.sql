@@ -1,0 +1,86 @@
+/* --- PREGUNTA 01 --- */
+
+-- Usando cnxsys
+-- Creando Usuario usrcoco
+
+ALTER SESSION SET "_ORACLE_SCRIPT"=TRUE;
+
+CREATE USER usrcoco IDENTIFIED BY albita
+DEFAULT TABLESPACE USERS
+TEMPORARY TABLESPACE TEMP
+PROFILE DEFAULT;
+
+-- Visualizar nombre y estado de todos los usuarios
+SELECT username, account_status FROM dba_users;
+
+-- Asignar permisos al usuario creado
+
+GRANT CONNECT, RESOURCE TO usrcoco;
+GRANT CREATE ANY TABLE TO usrcoco;
+GRANT CREATE SEQUENCE TO usrcoco;
+
+GRANT CREATE SYNONYM TO usrcoco;
+GRANT CREATE PUBLIC SYNONYM TO usrcoco;
+
+ALTER USER usrcoco QUOTA 10M ON USERS;
+
+/* --- PREGUNTA 02 --- */
+
+SELECT OWNER, COUNT(*) CANTIDAD_TABLAS FROM dba_objects
+WHERE OWNER IN ('SYS', 'SYSTEM', 'SCOTT') AND 
+            OBJECT_TYPE = 'TABLE' AND
+            CREATED BETWEEN '01/01/2010' AND '01/05/2020'
+GROUP BY OWNER
+ORDER BY CANTIDAD_TABLAS DESC;
+
+
+/* Pregunta 03 */
+
+-- Usando usrcoco
+
+CREATE TABLE TBTienda (
+  tie_cod   NUMBER,
+  tie_nom   VARCHAR2(60),
+  tie_dist  VARCHAR2(60)
+);
+
+CREATE TABLE TBVendedor (
+  ven_cod   NUMBER,
+  ven_nom   VARCHAR2(60),
+  ven_ape   VARCHAR2(60),
+  ven_sue   NUMBER(8,2),
+  tie_cod   NUMBER
+);
+
+ALTER TABLE TBTienda
+ADD CONSTRAINT PK_TIENDA PRIMARY KEY (tie_cod);
+
+ALTER TABLE TBVendedor
+ADD CONSTRAINT PK_VENDEDOR PRIMARY KEY (ven_cod);
+
+ALTER TABLE TBVendedor
+ADD CONSTRAINT FK_TIENDA_VENDEDOR FOREIGN KEY (tie_cod) 
+  REFERENCES TBTienda(tie_cod);
+
+ALTER TABLE TBVendedor
+ADD CONSTRAINT CK_SUELDO CHECK ( ven_sue > 2500 AND ven_sue < 16800 );
+
+/* Pregunta 04 */
+
+CREATE SEQUENCE SEQ_TIENDA
+INCREMENT BY 5
+START WITH 10
+MINVALUE 10
+MAXVALUE 900
+NOCYCLE
+NOCACHE;
+
+INSERT INTO TBTienda VALUES (SEQ_TIENDA.NEXTVAL, 'La Peruanita', 'Ate');
+INSERT INTO TBTienda VALUES (SEQ_TIENDA.NEXTVAL, 'Maximun Prod', 'Miraflores');
+INSERT INTO TBTienda VALUES (SEQ_TIENDA.NEXTVAL, 'La Peruanita', 'Ate');
+
+CREATE INDEX IDX_VENDEDOR
+ON TBVendedor (ven_nom, ven_ape);
+
+CREATE PUBLIC SYNONYM "STORE"
+FOR TIENDA;
